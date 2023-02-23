@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: #27292d;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    width: 100%;
+}
+
+.container_slider {
+    height: 500px;
+    width: 500px;
+    background: #161819;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.slider_buttons {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    background: #393d45;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.button:hover {
+    background: #555962;
+}
+
+.button i {
+    color: #fff;
+    font-size: 24px;
+}
+
