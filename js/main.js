@@ -23,3 +23,10 @@ buttonNext.onclick = () => {
     position = (position + 1) % lengthImages;
 }
 
+
+// const changeImage = () => {
+//     image.src = urlsImages[(position + 1) % lengthImages];
+//     position = (position + 1) % lengthImages;
+// }
+
+// setInterval(changeImage, 2000);
