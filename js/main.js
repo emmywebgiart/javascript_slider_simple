@@ -7,21 +7,25 @@ let currentImg = document.getElementById("current_img");
 const images = [
     {
         id: 1,
+        name: "HTML5",
         url: "./img/img_logo_html.png",
         color: "#ff552c"
     },
     {
         id: 2,
+        name: "CSS3",
         url: "./img/img_logo_css.png",
         color: "#0065a5"
     },
     {
         id: 3,
+        name: "JAVASCRIPT",
         url: "./img/img_logo_js.png",
         color: "#eab500"
     },
     {
         id: 4,
+        name: "PYTHON",
         url: "./img/img_logo_python.png",
         color: "#006da2"
     }
@@ -29,14 +33,16 @@ const images = [
 let lengthImages = images.length;
 let position = 0;
 
-containerSlider.style.setProperty("--bg--container", images[position].color)
+containerSlider.style.setProperty("--bg--image", images[position].color)
 image.src = images[position].url;
+image.alt = images[position].name;
 currentImg.innerHTML = position + 1;
 totalImg.innerHTML = lengthImages;
 
 const changeImage = () => {
     image.src = images[position].url;
-    containerSlider.style.setProperty("--bg--container", images[position].color)
+    image.alt = images[position].name;
+    containerSlider.style.setProperty("--bg--image", images[position].color)
     currentImg.innerHTML = position + 1;
 }
 
